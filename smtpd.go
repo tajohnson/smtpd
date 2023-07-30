@@ -402,6 +402,7 @@ func (session *session) extensions() []string {
 		fmt.Sprintf("SIZE %d", session.server.MaxMessageSize),
 		"8BITMIME",
 		"PIPELINING",
+		"SMTPUTF8",
 	}
 
 	if session.server.EnableXCLIENT {
